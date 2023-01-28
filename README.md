@@ -1,6 +1,5 @@
 # Descripción ✨
-Pagina web de reservas de un restaurante, este proyecto fue elaborado con fines educativos para mi universidad. 
-En esta pagina se utilizaron diferentes lenguajes de programación y gran variedad de herramientas tecnológicas para su desarrollo.
+Este es mi portafolio hecho a base de mis conocimientos como desarrolladora web.
 
 # Autor 🖋️
 Shirley Jennifer Giselle Reyes Aguilar
@@ -10,10 +9,10 @@ Shirley Jennifer Giselle Reyes Aguilar
  - [Portafolio Web](https://github.com/Jennykings/Mi_Portafolio)
 
  # Url para ver el resultado en vivo 🚀
- Para ver el proyecto en vivo puedes hacer click aqui [https://github.com/Jennykings/Pagina-de-reservas-en-HTML-CSS-JavaScript-PHP-Bootstrap-MySQL-](https://github.com/Jennykings/Pagina-de-reservas-en-HTML-CSS-JavaScript-PHP-Bootstrap-MySQL-)
+Para ver el proyecto en vivo puedes hacer click aqui [https://github.com/Jennykings/Mi_Portafolio](https://github.com/Jennykings/Mi_Portafolio)
 
  # Instalación 
- Este proyecto no necesita de instalación. Simplmente importa la base de datos con el mismo nombre y abre la carpeta o haz click en el index.
+ Este proyecto no necesita de instalación. Simplmente abre la carpeta o haz click en el index.
 
 #  Contratación 🔗
 Si quieres contratarme puedes escribirme a jennykings51@gmail.com para consultas.
