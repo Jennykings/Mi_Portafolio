@@ -4,7 +4,7 @@ Este es mi portafolio hecho a base de mis conocimientos como desarrolladora web.
 # Autor 🖋️
 Shirley Jennifer Giselle Reyes Aguilar
 
- - [Linkedin](www.linkedin.com/in/jennykings)
+ - [Linkedin](https://www.linkedin.com/in/jennykings/)
  - [Github](https://github.com/Jennykings)
  - [Portafolio Web](https://github.com/Jennykings/Mi_Portafolio)
 
