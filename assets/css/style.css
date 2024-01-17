@@ -370,7 +370,8 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #e42b2b;
+  color: #ff1b1b;
+  /*color: #e42b2b;*/
 }
 
 .section-title h2::before {
@@ -502,6 +503,71 @@ section {
 }
 /* about media queries ends*/
 
+
+
+/*liquid*/
+.home-image{
+  position: relative;
+}
+.img-box{
+  text-align: center;
+}
+.img-box img{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+.liquid-shape{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 5%;
+}
+.liquid-shape:nth-child(2){
+  filter: blur(50px);
+}
+@media screen and (max-width: 992px) {
+  .liquid-shape{
+    position: absolute;
+    width: 77%;
+    height: 50%;
+    z-index: -1;
+    top: 5%;
+    padding-left:23.5%
+  }
+  .liquid-shape:nth-child(2){
+    filter: blur(50px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .liquid-shape{
+    position: absolute;
+    width: 84%;
+    height: 50%;
+    z-index: -1;
+    top: 5%;
+    padding-left:15%
+  }
+  .liquid-shape:nth-child(2){
+    filter: blur(50px);
+  }
+}
+@media screen and (max-width: 404px) {
+  .liquid-shape{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   top: 5%;
+    padding:0px;
+    
+ }
+ .liquid-shape:nth-child(2){
+   filter: blur(50px);
+ } 
+ }
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -570,7 +636,8 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #947272;
+  background: rgb(85 85 85);
+ /* background: #947272;*/
 }
 
 .skills .progress-bar {
@@ -1263,7 +1330,8 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #c63232;
+  /*color: #111;*/
 }
 
 .testimonials .testimonial-item h4 {
