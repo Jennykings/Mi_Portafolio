@@ -12,7 +12,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  background:black
+  background:black;
+  /*cursor: none;*/
 }
 
 a {
@@ -32,6 +33,78 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# cursor
+--------------------------------------------------------------*/
+.cursor {
+  width: 40px;
+  height: 40px;
+  /*width: 20px;
+  height: 20px;*/
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.cursor::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  /*width: 20px;
+  height: 20px;*/
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  opacity: .5;
+  top: -1px;
+  left: -1px;
+  /*top: -8px;
+  left: -8px;*/
+  animation: cursorAnim2 .5s infinite alternate;
+  z-index: 10000;
+}
+
+@keyframes cursorAnim {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(3);
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 .5s forwards;
+  border: 1px solid red;
 }
 
 /*--------------------------------------------------------------
@@ -513,9 +586,13 @@ section {
   text-align: center;
 }
 .img-box img{
-  width: 100%;
+ /* width: 100%;
   max-width: 350px;
+  height: auto;*/
+  width: 110%;
+  max-width: 480px;
   height: auto;
+  margin-left: -10px;
 }
 .liquid-shape{
   position: absolute;
@@ -637,6 +714,7 @@ section {
 
 .skills .progress-bar-wrap {
   background: rgb(85 85 85);
+  border-radius: 25px;
  /* background: #947272;*/
 }
 
@@ -644,7 +722,10 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #bb0505;
+  background-color: #e81010;
+ /* background-color: #bb0505;*/
+  border-radius: 25px;
+  box-shadow: 0 0 .5rem #ff2525;
 }
 
 /*--------------------------------------------------------------
@@ -811,7 +892,8 @@ section {
 }
 .path{
   stroke-width: 10;
-  stroke: #ff2323;
+  stroke: #ff0202;
+  /*stroke: #ff2323;*/
   fill: transparent;
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
