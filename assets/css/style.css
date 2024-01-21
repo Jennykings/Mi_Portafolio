@@ -375,6 +375,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #e4e4e4;
+  text-shadow: 0 5px 10px #e4e4e43b;
 }
 
 #hero p {
@@ -387,6 +388,7 @@ h6 {
 #hero p span {
   color: #e42b2b;
   letter-spacing: 1px;
+  text-shadow: 0 5px 10px rgb(210, 32, 32);
 }
 
 #hero .social-links {
@@ -444,6 +446,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #ff1b1b;
+  text-shadow: 0 5px 10px rgb(210, 32, 32);
   /*color: #e42b2b;*/
 }
 
@@ -663,7 +666,8 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #bb0505;
+  /*background: #bb0505;*/
+  background: #d80909;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
@@ -671,6 +675,7 @@ section {
   justify-content: center;
   width: 48px;
   height: 48px;
+  box-shadow: 0 0 1rem rgb(255 0 0);
 }
 
 .facts .count-box span {
@@ -969,6 +974,53 @@ section {
   align-items: flex-start;
 }
 }
+
+/* TECH - STACK */
+
+.language__img {
+  width: 100%;
+  max-width: 100px;
+  transition: all 300ms;
+}
+.language:hover .language__img {
+  filter: brightness(80%);
+  opacity: 0.86;
+  transform: scale(0.9);
+}
+
+.language {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.language__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 16px;
+}
+
+.language__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.language__name {
+  position: absolute;
+  bottom: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  font-size: 20px;
+  opacity: 0;
+}
+.language:hover .language__name {
+  transform: scale(1);
+  opacity: 1;
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -977,13 +1029,15 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #947272;
+  color: #ec2222;
+  /*color: #ff5656;*/
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #bb0505;
+  border-left: 2px solid #d10e0e;
+  /*border-left: 2px solid #bb0505;*/
   position: relative;
 }
 
@@ -993,7 +1047,9 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #bb0505;
+  color: #ff5656;
+  /*color: #ec2222;*/
+  /*color: #bb0505;*/
   margin-bottom: 10px;
 }
 
@@ -1027,7 +1083,8 @@ section {
   left: -9px;
   top: 0;
   background: #000000;
-  border: 2px solid #bb0505;
+  border: 2px solid #d10e0e;
+  /*border: 2px solid #bb0505;*/
 }
 
 /*--------------------------------------------------------------
@@ -1412,7 +1469,8 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #c63232;
+  color: #ec2222;
+  /*color: #c63232;*/
   /*color: #111;*/
 }
 
@@ -1424,7 +1482,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #fc9090;
+  color: #ff5656;
   font-size: 26px;
 }
 
@@ -1496,7 +1554,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #d65b5b;
+  color: #ff5656;
 }
 
 .contact .info p {
@@ -1585,7 +1643,9 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #bb0505;
+  /*background: #bb0505;*/
+  background: #d80909;
+  box-shadow: 0 0 .9rem rgb(249 41 41);
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1594,7 +1654,9 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #e30606;
+  /*background: #e30606;*/
+  background: #ee0a0a;
+  box-shadow: 0 0 .9rem rgb(249 41 41);
 }
 
 @keyframes animate-loading {
