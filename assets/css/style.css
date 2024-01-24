@@ -750,7 +750,8 @@ section {
   margin-bottom: 50px;
 }
 .bar{
-  font-size: 23px;
+  font-size: 35px;
+  /*font-size: 23px;*/
 }
 .Technical-bars .bar {
   margin-top: 40px 0;
