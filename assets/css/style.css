@@ -1103,6 +1103,7 @@ section {
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
+  box-shadow: 0 0 1rem rgb(255 255 255 / 67%);
 }
 
 .portfolio #portfolio-flters li {
@@ -1120,7 +1121,8 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #bb0505;
+  color: #ec2222;
+  text-shadow: 0 0 1rem rgb(253 1 1 / 21%);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1275,7 +1277,8 @@ section {
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+  /*box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);*/
+  box-shadow: 0 0 1rem rgb(253 1 1 / 81%);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1317,8 +1320,12 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #3b3939;
-  box-shadow: 0px 5px 90px 0px rgb(0, 0, 0,  0.8);
+  /*background: #3b3939;*/
+  background: #222222;
+ /* box-shadow: 0px 5px 90px 0px rgb(0, 0, 0,  0.8);*/
+  /*box-shadow: 0px 5px 90px 0px rgb(238 50 50 / 15%);*/
+  box-shadow: 0px 5px 90px 0px rgb(238 50 50 / 20%);
+  border-radius: 20px;
 }
 
 .services .icon-box .icon {
@@ -1346,7 +1353,8 @@ section {
 
 .services .icon-box .icon svg path {
   transition: 0.5s;
-  fill: #f5f5f5;
+  /*fill: #f5f5f5;*/
+  fill: #0b0b0b;
 }
 
 .services .icon-box h4 {
@@ -1356,19 +1364,22 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #947272;
+  color: #ec2222;
   transition: ease-in-out 0.3s;
+  text-shadow: 0 0 1rem rgb(255 0 0 / 54%);
 }
 
 .services .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  text-shadow: 0 0 1rem rgb(249 248 248 / 48%);
 }
 
 .services .icon-box:hover {
   border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgb(255, 255, 255, 0.79);
+  /*box-shadow: 0px 0 35px 0 rgb(255, 255, 255, 0.79);*/
+  box-shadow: 0px 0 35px 0 rgb(252 1 1 / 79%);
 }
 
 .services .iconbox-blue i {
@@ -1443,6 +1454,87 @@ section {
   fill: #11dbcf;
 }
 
+
+/*--------------------------------------------------------------
+service - Modal
+--------------------------------------------------------------*/
+
+.services__modal{
+  position: fixed;
+  inset: 0;
+  /*background-color: hsl(255, 90%, 30%, .3);*/
+  background-color: hsl(0deg 90% 30% / 30%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px); /*for safari*/
+  display: grid;
+  place-items: center;
+  padding: 2rem 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  transition: opacity .4s, visibility .4s;
+}
+
+.services__modal-content{
+  max-height: 420px;
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3.5rem 1.5rem;
+  /*border-bottom: 6px solid hsl(255, 90%, 60%);*/
+  border-bottom: 6px solid hsl(0deg 90% 60%);
+  overflow: auto;
+  color: #000;
+  border-radius:20px;
+  box-shadow: 0 0 1rem rgb(250 247 247 / 48%);
+  text-shadow: 0 0 1rem rgb(0 0 0 / 21%);
+}
+
+.services__modal-content::-webkit-scrollbar{
+  width: .6rem;
+}
+
+.services__modal-content::-webkit-scrollbar-thumb{
+  /*background-color: hsl(255, 8%, 60%);*/
+  background-color: hsl(0deg 8% 60%);
+}
+
+.services__modal-title{
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.services__modal-list{
+  margin-left: 1rem;
+}
+
+.services__modal-item{
+  text-align: initial;
+  list-style: square;
+}
+
+.services__modal-item::marker{
+  /*color: hsl(255, 90%, 60%);*/
+  color: hsl(0deg 90% 60%);
+}
+
+.services__modal-close{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  /*color: hsl(255, 90%, 60%);*/
+  color: hsl(0deg 90% 60%);
+  cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------
+active-modal
+--------------------------------------------------------------*/
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1556,6 +1648,8 @@ section {
   font-weight: 600;
   margin-bottom: 5px;
   color: #ff5656;
+  /*color: #ec2222;*/
+  text-shadow: 0 0 1rem rgb(255 0 0 / 54%);
 }
 
 .contact .info p {

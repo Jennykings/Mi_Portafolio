@@ -274,6 +274,8 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 });
 // <!-- tilt js effect ends -->
 
+// <!-- cursor -->
+
 const cursor = document.querySelector('.cursor');
 
         document.addEventListener('mousemove', e => {
@@ -289,4 +291,27 @@ const cursor = document.querySelector('.cursor');
         })
 
 
+// <!-- modal -->
+
+        const modal = document.querySelectorAll('.services__modal'),
+        modalButton = document.querySelectorAll('.services__button'),
+        modalClose = document.querySelectorAll('.services__modal-close')
+   
+   let activeModal = (modalClick) => {
+       modal[modalClick].classList.add('active-modal')
+   }
+   
+   modalButton.forEach((modalButton, i) => {
+       modalButton.addEventListener('click', () => {
+           activeModal(i)
+       })
+   })
+   
+   modalClose.forEach((modalClose) => {
+       modalClose.addEventListener('click', () => {
+           modal.forEach((modalRemove) => {
+           modalRemove.classList.remove('active-modal')
+           })
+       })
+   })     
 })()
