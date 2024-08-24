@@ -267,4 +267,51 @@
    */
   new PureCounter();
 
+// <!-- imagen perfil -->
+// <!-- tilt js effect starts -->
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 15,
+});
+// <!-- tilt js effect ends -->
+
+// <!-- cursor -->
+
+const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+
+
+// <!-- modal -->
+
+        const modal = document.querySelectorAll('.services__modal'),
+        modalButton = document.querySelectorAll('.services__button'),
+        modalClose = document.querySelectorAll('.services__modal-close')
+   
+   let activeModal = (modalClick) => {
+       modal[modalClick].classList.add('active-modal')
+   }
+   
+   modalButton.forEach((modalButton, i) => {
+       modalButton.addEventListener('click', () => {
+           activeModal(i)
+       })
+   })
+   
+   modalClose.forEach((modalClose) => {
+       modalClose.addEventListener('click', () => {
+           modal.forEach((modalRemove) => {
+           modalRemove.classList.remove('active-modal')
+           })
+       })
+   })     
 })()
