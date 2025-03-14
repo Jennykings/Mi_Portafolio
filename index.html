@@ -39,6 +39,34 @@
     body {
     cursor: none;
   }
+  /* Botón de traducción */
+  #google_translate_element {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .goog-te-combo {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .goog-te-combo:hover {
+            border-color: #007bff;
+        }
+        /* Evitar que la página se desplace al seleccionar un idioma */
+        #google_translate_element select {
+            outline: none;
+        }
+        /* end Botón de traducción */
   </style>
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
@@ -1721,6 +1749,31 @@
  <script src="./assets/js/main.js"></script>
  <!--<script src="./assets/js/script.js"></script> -->
 
+
+<!-- ==== Botón de traducción ==== -->
+ <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,es',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+        
+        // Evitar que el cambio de idioma haga scroll hacia arriba
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector("#google_translate_element").addEventListener("click", function(event) {
+                event.preventDefault();
+            });
+        });
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- ==== end Botón de traducción  ==== -->
 </body>
 
 </html>
