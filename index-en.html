@@ -40,7 +40,7 @@
     cursor: none;
   }
   /* Botón de traducción */
-  #google_translate_element {
+  /*#google_translate_element {
             position: fixed;
             bottom: 20px;
             left: 20px;
@@ -61,12 +61,42 @@
         }
         .goog-te-combo:hover {
             border-color: #007bff;
-        }
+        }*/
         /* Evitar que la página se desplace al seleccionar un idioma */
-        #google_translate_element select {
+        /*#google_translate_element select {
             outline: none;
-        }
+        }*/
         /* end Botón de traducción */
+
+        /* Botón de traducción inglés/español*/
+        .language-switch {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            gap: 10px;
+            background: #434343; /* write / #434343*/
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 9999; /* Asegura que esté por encima del header */
+        }
+        .lang-btn {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .lang-btn img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.2s ease;
+        }
+        .lang-btn img:hover {
+            transform: scale(1.1);
+        }
+        /* end Botón de traducción inglés/español*/
   </style>
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
@@ -1751,7 +1781,7 @@
 
 
 <!-- ==== Botón de traducción ==== -->
- <div id="google_translate_element"></div>
+ <!--<div id="google_translate_element"></div>
 
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -1773,7 +1803,21 @@
         });
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!-- ==== end Botón de traducción  ==== -->
+  -->
+    <!-- ==== end Botón de traducción  ==== -->
+
+<!-- ==== Botón de traducción inglés/español ==== -->
+    
+<div class="language-switch">
+  <button class="lang-btn" onclick="window.location.href='index.html'">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Español">
+  </button>
+  <button class="lang-btn" onclick="window.location.href='index-en.html'">
+      <img src="https://cdn2.iconfinder.com/data/icons/european-rounded-square-flags/512/uk_united_kingdom_britain_british_flag-512.png" alt="English">
+  </button>
+</div>
+<!-- ==== end Botón de traducción inglés/español ==== -->
+
 </body>
 
 </html>
