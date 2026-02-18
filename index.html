@@ -40,7 +40,7 @@
     cursor: none;
   }
   /* Botón de traducción google*/
-  /*#google_translate_element {
+  #google_translate_element {
             position: fixed;
             bottom: 20px;
             left: 20px;
@@ -61,26 +61,27 @@
         }
         .goog-te-combo:hover {
             border-color: #007bff;
-        }*/
-        /* Evitar que la página se desplace al seleccionar un idioma *//*
+        }
+        /* Evitar que la página se desplace al seleccionar un idioma */
+        
         #google_translate_element select {
             outline: none;
-        }*/
+        }
         /* end Botón de traducción */
 
         /* Botón de traducción inglés/español*/
-        .language-switch {
+        /*.language-switch {
             position: fixed;
             bottom: 20px;
             left: 20px;
             display: flex;
             gap: 10px;
-            background: #434343; /* write / #434343*/
-            padding: 10px;
+            background: #434343; *//* write / #434343*/
+            /*padding: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 9999; /* Asegura que esté por encima del header */
-        }
+            z-index: 9999; *//* Asegura que esté por encima del header */
+        /*}/*
         .lang-btn {
             border: none;
             background: none;
@@ -95,7 +96,8 @@
         }
         .lang-btn img:hover {
             transform: scale(1.1);
-        }
+        }*/
+
         /* end Botón de traducción inglés/español*/
   </style>
   <!-- ======= Mobile nav toggle button ======= -->
@@ -2122,7 +2124,7 @@
 
 
 <!-- ==== Botón de traducción ==== -->
-<!--<div id="google_translate_element"></div>
+<div id="google_translate_element"></div>
 
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -2144,11 +2146,11 @@
         });
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
---> 
+
     <!-- ==== end Botón de traducción  ==== -->
      
     <!-- ==== Botón de traducción inglés/español ==== -->
-    
+     <!--
     <div class="language-switch">
         <button class="lang-btn" onclick="window.location.href='index.html'">
             <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Español">
@@ -2157,6 +2159,7 @@
             <img src="https://cdn-icons-png.freepik.com/512/11654/11654500.png" alt="English">
         </button>
     </div>
+    --> 
     <!-- ==== end Botón de traducción inglés/español ==== -->
 </body>
 
